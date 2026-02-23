@@ -2,7 +2,7 @@
   "supplyRetries": 0,
   "ingame_hotkeys": "",
   "containersClosed": false,
-  "friendName": "Bozosz Fullstress",
+  "friendName": "Default",
   "depositDone": false,
   "jewelleryEquipper": {
     "ringMin": 0,
@@ -30,7 +30,7 @@
   },
   "inboxContainerOpen": false,
   "autoUESpell": "exevo gran mas Vis",
-  "autoTradeMessage": "dada",
+  "autoTradeMessage": "Default",
   "comboUECmd": "exevo gran mas pox",
   "_macros": {
     "": false,
@@ -453,11 +453,11 @@
       "UECombo": "F2",
       "AntiPush": "NONE"
     },
-    "playerToFollow": "Suomaf Desselb",
+    "playerToFollow": " ",
     "delayAfterUses": 1000,
     "splittMoneyAmount": 100000,
     "PotFriendManaPercent": "60",
-    "navLeader": "Suomaf Desselb",
+    "navLeader": " ",
     "comboUEMsg": "Bye Bye :)",
     "RopeItem": 3003,
     "comboMWRuneID": 3180,
@@ -477,7 +477,7 @@
   "mwPoses": [
 
   ],
-  "comboSDLeader": "Gui Datrabai",
+  "comboSDLeader": " ",
   "BotServerChannel": "4661341634040",
   "comboUESpell": "exevo gran mas vis",
   "extras": {
@@ -665,7 +665,7 @@
     }
   },
   "stopSearch": false,
-  "comboUELeader": "Guzin Datrabai",
+  "comboUELeader": "Default",
   "BOTserver": {
     "manaInfo": true,
     "mwallInfo": false,
@@ -725,12 +725,12 @@
     "playerDetectedLogout": false,
     "creatureDetected": false
   },
-  "fName": "Magic Shield",
+  "fName": "Default",
   "manaShield": "utamo vita",
   "ComboAttack": {
-    "LeaderName3": "Cocacolaa Lyze",
-    "LeaderName2": "Keidann Loko",
-    "LeaderName": "Bozosz Fullstress"
+    "LeaderName3": "Default",
+    "LeaderName2": "Default",
+    "LeaderName": "Default"
   },
   "OpenPrivateTabs": true,
   "playerList": {
