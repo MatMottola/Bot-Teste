@@ -1,0 +1,411 @@
+{
+  "hpitem1": {
+    "max": 32,
+    "title": "HP%",
+    "on": false,
+    "item": 266,
+    "subType": 0,
+    "min": 0
+  },
+  "supplyRetries": 0,
+  "monsterKill": {
+    "min": false
+  },
+  "foodItems": [
+    {
+      "count": 17,
+      "id": 3725
+    },
+    {
+      "count": 2,
+      "id": 3607
+    },
+    {
+      "count": 2,
+      "id": 3583
+    },
+    {
+      "count": 80,
+      "id": 3731
+    },
+    {
+      "count": 19,
+      "id": 3600
+    },
+    {
+      "count": 1,
+      "id": 3732
+    },
+    {
+      "count": 0,
+      "id": 3592
+    },
+    {
+      "count": 0,
+      "id": 3582
+    },
+    {
+      "count": 0,
+      "id": 3577
+    },
+    {
+      "count": 53,
+      "id": 3578
+    }
+  ],
+  "isUsing": false,
+  "serverMembers": "[\"Kekw Awtt\"]",
+  "healing2": {
+    "max": 70,
+    "title": "HP%",
+    "on": true,
+    "min": 51,
+    "text": "Exura Gran"
+  },
+  "comboLeaderName": "Showtime",
+  "comboUELeader": "Kovalski",
+  "manaitem2": {
+    "max": 90,
+    "title": "MP%",
+    "on": true,
+    "item": 238,
+    "subType": 0,
+    "min": 0
+  },
+  "containersReset": false,
+  "posCheckRetries": 1,
+  "containersClosed": false,
+  "itemsBp2": "BP Container Name",
+  "antiParalyze": "adori gran flam",
+  "depositDone": false,
+  "autoUESpell": "Exevo Gran Mas vis",
+  "jewelleryEquipper": {
+    "ringMin": 0,
+    "valueAmmy": false,
+    "ringEnabled": false,
+    "ammyEnabled": false,
+    "ammyMin": 0,
+    "ringMax": 75,
+    "valueRing": false,
+    "ringId": 0,
+    "ringValue": "HP",
+    "ammySwitch": true,
+    "ammyId": 0,
+    "ringSwitch": true,
+    "ammyMax": 86,
+    "ammyValue": "HP"
+  },
+  "supplies": {
+    "imbues": false,
+    "item6": 0,
+    "ammoBp": 0,
+    "item2Min": "380",
+    "runeBp": 0,
+    "item3Min": "00",
+    "item1Min": "00",
+    "item7Max": 0,
+    "item6Max": "000",
+    "item2": 238,
+    "sortSupplies": true,
+    "item6Min": "00",
+    "potionBp": 26326,
+    "SoftBoots": false,
+    "item5Max": "00",
+    "item1": 0,
+    "item5Min": "00",
+    "item4Max": "00",
+    "item4Min": "00",
+    "capValue": "50",
+    "item3Max": "000",
+    "item2Max": "1650",
+    "staminaSwitch": false,
+    "item5": 0,
+    "staminaValue": 900,
+    "capSwitch": false,
+    "item1Max": "00",
+    "item7": 0,
+    "item3": 0,
+    "item4": 0
+  },
+  "itemsBp3": "backpack",
+  "sioPercent": {
+    "max": 35,
+    "title": "Sio HP%",
+    "on": false,
+    "min": 0,
+    "text": ""
+  },
+  "BotServerChannel": "4633452593053",
+  "currentStack": 0,
+  "BOTserver": {
+    "manaInfo": false,
+    "mwallInfo": false,
+    "playerPos": false,
+    "comboSDHotkey": "F12",
+    "paramaxHotkey": "F11",
+    "paramax": false,
+    "runeCombo": false
+  },
+  "manaitem1": {
+    "max": 90,
+    "title": "MP%",
+    "on": true,
+    "item": 238,
+    "subType": 0,
+    "min": 0
+  },
+  "hpitem2": {
+    "max": 36,
+    "title": "HP%",
+    "on": false,
+    "item": 2874,
+    "subType": 2,
+    "min": 0
+  },
+  "manaShield": "utamo vita",
+  "autoTradeMessage": "SELL-CHAR-SCRIPT OTClientV8-Elf Bot",
+  "sortItems1": [
+
+  ],
+  "isUsingPotion": false,
+  "_macros": {
+    "": false,
+    "Open Next BPs": false,
+    "Sd Target Command": false,
+    "Toggle Auto Sorting": false,
+    "Shift+C": false,
+    "AntiRS & Msg": false,
+    "Follow Hotkey (F)": true,
+    "Combo UE": false,
+    "Use Items": false,
+    "Shift+W": false,
+    "Stake Bodies": false,
+    "Auto Untrap Doors": false,
+    "Auto Sewers (9)": false,
+    "Drag Anti Push": false,
+    "Attack Leader Target": false,
+    "eat food": true,
+    "haste": true,
+    "MW Hotkey (Space)": true,
+    "Anti Kick": false,
+    "Send message on trade": true,
+    "Shift+E": false,
+    "AntiRS & Msg DGS": true,
+    "Anti Push Near Neutral": false,
+    "Exiva Last (Y)": false,
+    "Anti Kick - Fast": false,
+    "Auto Untrap Doors (U)": false,
+    "Bug Door": false,
+    "Auto Vid": false,
+    "WG Hotkey (G)": true,
+    "Death Cam": true,
+    "Enable Sorting 4": false,
+    "Auto utana vid": false,
+    "Use Stamina": false,
+    "Auto Use Tool": false,
+    "Drop Items": false,
+    "Shift+D": false,
+    "Anti Red Dg": true,
+    "Mas Vis Target": true,
+    "Combo SD": false,
+    "Stack items": true,
+    "Famous' Spam": false,
+    "Exevo Gran Mas Vis": true,
+    "Numpad4": false,
+    "Shift+Z": false,
+    "Flower Hotkey (N)": true,
+    "Enable Sorting 2": true,
+    "Leader/Target Outfit": false,
+    "Enable Sorting 3": false,
+    "Auto Utevo": false,
+    "Vis Target": false,
+    "Numpad2": false,
+    "Shallow Follow": false,
+    "Numpad9": false,
+    "Auto Cut Grav": false,
+    "Enable Sorting 1": true,
+    "Keep Attack": true,
+    "Sio Paralyzed Friend": false,
+    "Spy Level": true,
+    "Anti Push": false,
+    "Shift+S": false,
+    "Numpad8": false,
+    "Numpad7": false,
+    "Auto open doors": false,
+    "Keep Backpacks": false,
+    "Search for Item": false,
+    "Player Info": false,
+    "Numpad6": false,
+    "Auto Utamo": false,
+    "Shift+A": false,
+    "Auto SD Attack": false,
+    "Anti Push Near Enemy": false,
+    "Keep Follow": false,
+    "Bug Map": false,
+    "Auto F-bomb": false,
+    "Auto UE+2 ": false,
+    "anti paralyze": false,
+    "Auto Sewers (1)": false,
+    "Numpad3": false,
+    "Ultra Anti-Push": false,
+    "Shift+Q": false,
+    "mana shield": false,
+    "RainbowOutfit": false,
+    "Spell Target": false,
+    "Numpad1": false,
+    "Exchange money": true,
+    "Auto UE": false,
+    "Anti RedGOPZ": false,
+    "Exiva Target (T)": false
+  },
+  "lowCapDrop": [
+    {
+      "count": 24,
+      "id": 3577
+    },
+    {
+      "count": 0,
+      "id": 3582
+    }
+  ],
+  "stopSearch": false,
+  "comboUESpell": "exevo gran mas flam",
+  "lootContainerOpen": false,
+  "manaTrain": {
+    "max": 100,
+    "title": "MP%",
+    "on": true,
+    "min": 95,
+    "text": "Exura Vita"
+  },
+  "autoEquip": [
+    {
+      "item1": 18935,
+      "title": "Auto Equip",
+      "item2": 18935,
+      "on": true,
+      "slot": 9
+    },
+    {
+      "item1": 3446,
+      "title": "Auto Equip",
+      "item2": 3446,
+      "on": false,
+      "slot": 10
+    },
+    {
+      "item1": 406,
+      "title": "Auto Equip",
+      "item2": 7532,
+      "on": false,
+      "slot": 0
+    },
+    {
+      "item1": 6529,
+      "title": "Auto Equip",
+      "item2": 3549,
+      "on": false,
+      "slot": 8
+    }
+  ],
+  "openMin": true,
+  "trashItems": [
+    {
+      "id": 3269,
+      "count": 1
+    }
+  ],
+  "itemsBp1": "9604",
+  "sellAllCap": 0,
+  "ingame_hotkeys": "macro(200, \"Spell Target\", function()\n if g_game.isAttacking() then\n say('Exori MorT')\nend\nend)\n\n\nkey = \";\"\nlocal fieldIds = {2123, 2124, 2125, 2121, 2126}\nlocal mwallIds = {2128, 2129, 2130}\nlocal doorIds = {1672, 1673, 1651, 1652, 6249, 6250, 6251, 6252, 6253, 6254, 6262, 6263, 5104, 5105}\n\nlocal targetTile\n\nbugDoor = macro(10, \"Bug Door\", function()\n    local flagDoor = false\n    if targetTile and targetTile:getText() == \"BUG DOOR\" then\n        for i, mwallId in ipairs(mwallIds) do\n            if targetTile:getTopUseThing():getId() == mwallId then\n                return\n            end\n        end\n        for i, fieldId in ipairs(fieldIds) do\n            if targetTile:getTopUseThing():getId() == fieldId then\n                useWith(3148, targetTile:getTopUseThing()) -- destroy field\n            end\n        end\n        for i, doorId in ipairs(doorIds) do\n            if targetTile:getTopUseThing():getId() == doorId then\n                flagDoor = true\n            end\n        end\n        if flagDoor then\n            use(targetTile:getTopUseThing()) -- use door\n        else\n            useWith(3197, targetTile:getTopUseThing()) -- desintegrate\n        end\n    end\nend)\n\nonKeyPress(function(keys)\n    if bugDoor.isOn() then\n        if keys == key then\n            local tile = getTileUnderCursor()\n            if tile then\n                if tile:getText() == \"BUG DOOR\" then\n                    tile:setText(\"\")\n                    targetTile = nil\n                else\n                    tile:setText(\"BUG DOOR\")\n                    targetTile = tile\n                end\n            end\n        end\n    end\nend)",
+  "useItems": [
+    {
+      "id": 18741,
+      "count": 1
+    }
+  ],
+  "ingame_macros": "\nmacro(100, \"Search for Item\", function()\n  local z = posz()\n  for _, tile in ipairs(g_map.getTiles(z)) do\n    if z ~= posz() then return end\n    if getDistanceBetween(pos(), tile:getPosition()) <= 7 then\n      if tile:getTopLookThing():getId() == 3031 then\n         g_game.move(tile:getTopLookThing(), {x = 65535, y=SlotBack, z=0}, tile:getTopLookThing():getCount())\n      end\n    end\n  end\nend)\nmacro(500, \"Use Stamina\", function()\nif stamina() <= 40*60 then\nuse(3233)\nend\nend)\n\nmacro(180000, \"Auto utana vid\", function()\nsay('utana vid')\nend)\n\nmacro(20000, 'Auto Utamo', function() say('Utamo Vita') end)\n\nmacro(200000, 'Auto Vid', function() say('Utana Vid') end)\n",
+  "lootItemsCount": 0,
+  "pushmax": {
+    "pushDelay": 1000,
+    "enabled": false,
+    "pushCloseKey": "R",
+    "pushCloseRuneId": 3197
+  },
+  "clearing": false,
+  "sortItems2": [
+    {
+      "id": 6299,
+      "count": 1
+    }
+  ],
+  "_configs": {
+    "targetbot_configs": {
+      "selected": "Druid_Vengoth",
+      "enabled": true
+    },
+    "cavebot_configs": {
+      "selected": "Souleater-Vengoth",
+      "enabled": false
+    }
+  },
+  "healing1": {
+    "max": 94,
+    "title": "HP%",
+    "on": true,
+    "min": 71,
+    "text": "exura"
+  },
+  "energyRing": {
+    "itemIdEquipped": 3088,
+    "manaPercentRemove": 10,
+    "hpPercentRemove": 95,
+    "itemId": 3051,
+    "screenPlayers": 0,
+    "enabled": true,
+    "hpPercent": 85,
+    "screenMonsters": 0
+  },
+  "sortItems4": [
+
+  ],
+  "comboUECmd": "exevo gran mas frigo",
+  "sortItems3": [
+
+  ],
+  "hasteSpell": "utani gran hur",
+  "uhPercent": {
+    "max": 42,
+    "title": "UH HP%",
+    "on": true,
+    "min": 0,
+    "text": ""
+  },
+  "alarms": {
+    "playerDetected": false,
+    "healthValue": 15,
+    "manaValue": 30,
+    "playerAttack": true,
+    "manaBelow": false,
+    "privateMessage": true,
+    "playerDetectedLogout": false,
+    "enabled": true,
+    "healthBelow": true,
+    "creatureDetected": false
+  },
+  "itemsBp4": "BP Container Name",
+  "comboSDLeader": "Maloka",
+  "inboxContainerOpen": false,
+  "push_dist": {
+    "pushDistanceRuneId": 3172,
+    "enabled": false,
+    "macroDelay": 200
+  },
+  "healing3": {
+    "max": 50,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "Exura Vita"
+  }
+}

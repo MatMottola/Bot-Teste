@@ -1,0 +1,3 @@
+MWALL_TILES = {}
+WG_TILES = {}
+PLAYERS_INFO = {}

@@ -1,0 +1,751 @@
+{
+  "supplyRetries": 0,
+  "ingame_hotkeys": "",
+  "containersClosed": false,
+  "friendName": "Bozosz Fullstress",
+  "depositDone": false,
+  "jewelleryEquipper": {
+    "ringMin": 0,
+    "valueAmmy": false,
+    "ringEnabled": false,
+    "ammyEnabled": true,
+    "ammyMin": 0,
+    "ringMax": 69,
+    "valueRing": false,
+    "ringId": 3048,
+    "ammySwitch": true,
+    "ringValue": "HP",
+    "ammyId": 3081,
+    "ringSwitch": true,
+    "ammyMax": 60,
+    "ammyValue": "HP"
+  },
+  "comboLeaderName": "",
+  "sioPercent": {
+    "max": 60,
+    "title": "Sio HP%",
+    "on": false,
+    "min": 0,
+    "text": ""
+  },
+  "inboxContainerOpen": false,
+  "autoUESpell": "exevo gran mas Vis",
+  "autoTradeMessage": "dada",
+  "comboUECmd": "exevo gran mas pox",
+  "_macros": {
+    "": false,
+    "Sd Target Command": false,
+    "Uses/Use With": true,
+    "Force Hold Wg": true,
+    "Drop Sd": false,
+    "Follow Hotkey (F)": true,
+    "Use Items": false,
+    "Mort Reduction": false,
+    "Auto Avatar Pro": false,
+    "DropPot": false,
+    "Auto UE+2 ": false,
+    "Attack Leader Target": false,
+    "Paralyze on Target": false,
+    "Shift+A": false,
+    "MW Hotkey (Space)": false,
+    "Shift+E": false,
+    "Auto Use Infront": false,
+    "AFK Mode": false,
+    "Numpad1": false,
+    "Auto Party": true,
+    "NexT BP0item": false,
+    "Follow ": false,
+    "Drop Items": false,
+    "Shift+D": false,
+    "Auto Levitate": false,
+    "Search for Item": true,
+    "Anti Red": true,
+    "Open Next Bpfull": true,
+    "OpenBp0ID": false,
+    "Auto Sell": true,
+    "Numpad4": false,
+    "Auto SD Attack": false,
+    "Force Hold Mw": true,
+    "PushMax": false,
+    "Spy Level": false,
+    "Numpad2": false,
+    "FollowMouse (BugMap)": false,
+    "Hold_Target": false,
+    "Keep Attack": false,
+    "Follow": true,
+    "SD": true,
+    "Macaco LOKO": false,
+    "Super SD on Target": false,
+    "Drop Pos POT": false,
+    "Collect Items": false,
+    "Enable Nav": true,
+    "Rp Utito": true,
+    "Shift+Q": false,
+    "Exchange money": true,
+    "Paralyse ": false,
+    "DropTrashp": true,
+    "Open Next BPs": true,
+    "Numpad6": false,
+    "SSA AutoLoot": true,
+    "RP spells TargeT": false,
+    "Combo UE": true,
+    "Shift+W": false,
+    "Anti-Push": false,
+    "Safe SD/Mas Frigo": true,
+    "Paralyse": false,
+    "Anti Red ": false,
+    "Auto Sewers (1)": false,
+    "Anti Kick": true,
+    "Send message on trade": false,
+    "Numpad3": false,
+    "Exiva Last (Y)": false,
+    "Name Default": true,
+    "Anti Kick - Fast": false,
+    "Mimic Leader Say": true,
+    "WG Hotkey (G)": false,
+    "Auto Utito San": true,
+    "Player on Screen": false,
+    "Check": false,
+    "Death Cam": false,
+    "UE SAFE": false,
+    "[SD] Usar Spell": false,
+    "Auto Use Tool": true,
+    "Anti Red Dg": true,
+    "Drop Pot": false,
+    "SD on ": false,
+    "DropTrash": true,
+    "Stack items": false,
+    "SuperSD ": false,
+    "Paralyse on Target": false,
+    "mwall on target": false,
+    "Rp Combo": true,
+    "SuperSD": false,
+    "Combo Attack": false,
+    "Rp Utamo": false,
+    "Flower Hotkey (N)": true,
+    "Open next container": false,
+    "mwall step": false,
+    "Leader/Target Outfit": false,
+    "Keep Backpacks": false,
+    "Numpad9": false,
+    "Shift+C": false,
+    "Numpad7": false,
+    "mana shield": false,
+    "Guild SIO (Green Shield)": false,
+    "[SD] Usar SD": false,
+    "Pot Friend": false,
+    "Auto F-bomb": false,
+    "Friend Healer": true,
+    "Sd on Target": false,
+    "Guild SIO (Green Emblem)": false,
+    "Shift+S": false,
+    "Auto-Mount": false,
+    "haste": true,
+    "Super SD ": false,
+    "Sd ": false,
+    "SSA AutoLoot Control": true,
+    "Player Info": false,
+    "Walk Mount": false,
+    "Caderante FDP": false,
+    "Sio VIP": false,
+    "use item around": false,
+    "Idle Mode": false,
+    "Keep Follow": false,
+    "Bug Map": false,
+    "Auto Avatar": false,
+    "Bot Off On [RS]": false,
+    "Combar UE": false,
+    "anti paralyze": true,
+    "PlayeronScreen": false,
+    "Utito Ek": false,
+    "Numpad8": false,
+    "Anti Push": false,
+    "RainbowOutfit": false,
+    "Auto Utito": false,
+    "Click ReUse": false,
+    "eat food": true,
+    "Shallow Follow": false,
+    "utito tempo san": false,
+    "Exiva Target (T)": false
+  },
+  "lootContainerOpen": false,
+  "UeSpell": "Exevo gran mas Frigo",
+  "ingame_macros": "local spell = \"uteta res dru\"\nlocal cooldownTime = 60 -- tempo oficial do cooldown em segundos\nlocal lastCast = 0\n\n-- cria label na tela\nlocal cooldownLabel = UI.Label(\"Avatar: Ready\")\ncooldownLabel:setColor(\"green\")\n\nmacro(200, \"Auto Avatar\", function()\n  local now = now / 1000\n\n  -- Se pode castar, usa a spell\n  if canCast(spell) then\n    saySpell(spell)\n    lastCast = now\n  end\n\n  -- Calcula tempo restante\n  local remaining = math.max(0, cooldownTime - (now - lastCast))\n\n  if remaining > 0 then\n    cooldownLabel:setText(\"Avatar: \" .. math.ceil(remaining) .. \"s\")\n    cooldownLabel:setColor(\"blue\")\n  else\n    cooldownLabel:setText(\"Avatar: Ready\")\n    cooldownLabel:setColor(\"green\")\n  end\nend)\n\n-- Auto SSA Looter\n\n-- ===== CONFIG =====\nlocal SSA_ID = 3081\nlocal MIN_SSA = 5\nlocal MAX_SSA = 19\n-- ==================\n\nif not storage.ssaAutoLoot then\n    storage.ssaAutoLoot = {\n        mode = \"idle\" -- idle | adding | cleared\n    }\nend\n\n-- Fun��o para contar SSA (n�o stack�vel)\nlocal function getSSAcount()\n    local count = 0\n    \n    for _, container in pairs(g_game.getContainers()) do\n        for _, item in pairs(container:getItems()) do\n            if item:getId() == SSA_ID then\n                count = count + 1\n            end\n        end\n    end\n    \n    return count\nend\n\nmacro(2000, \"SSA AutoLoot Control\", function()\n    local total = getSSAcount()\n\n    -- ?? Se tiver menos que 5 SSA\n    if total < MIN_SSA and storage.ssaAutoLoot.mode ~= \"adding\" then\n        say(\"!autoloot add, stone skin amulet\")\n        storage.ssaAutoLoot.mode = \"adding\"\n        warn(\"SSA abaixo de 5 - Autoloot ADD ativado\")\n    end\n\n    -- ?? Se tiver 19 ou mais SSA\n    if total >= MAX_SSA and storage.ssaAutoLoot.mode ~= \"cleared\" then\n        say(\"!autoloot clear\")\n        storage.ssaAutoLoot.mode = \"cleared\"\n        info(\"SSA >= 19 - Autoloot CLEAR executado\")\n    end\n\n    -- ?? Reset interno quando ficar entre 5 e 18\n    if total >= MIN_SSA and total < MAX_SSA then\n        storage.ssaAutoLoot.mode = \"idle\"\n    end\nend)\n\n\n\n--\n\n\nlocal spell = \"exura sio\"\nlocal hpPercent = 80\nlocal minMana = 100\nlocal delay = 200\n\nmacro(delay, \"Guild SIO (Green Emblem)\", function()\n\n    if mana() < minMana then return end\n\n    local lowestTarget = nil\n    local lowestHp = 101\n\n    for _, creature in ipairs(getSpectators()) do\n        if creature:isPlayer()\n        and not creature:isLocalPlayer()\n        and creature:getEmblem() == 1\n        and creature:getHealthPercent() > 0\n        and creature:getHealthPercent() < hpPercent then\n\n            if creature:getHealthPercent() <= lowestHp then\n                lowestHp = creature:getHealthPercent()\n                lowestTarget = creature\n            end\n        end\n    end\n\n    if lowestTarget then\n        say(spell .. ' \"' .. lowestTarget:getName())\n    end\n\nend)\n\n\n\n\n\n",
+  "clearing": false,
+  "_icons": {
+    "sd2": {
+      "y": 0.01021711366539,
+      "x": 0.11439114391144,
+      "enabled": false
+    },
+    "Push Max": {
+      "y": 0.33333333333333,
+      "x": 0.010770505385253,
+      "enabled": false
+    },
+    "toggle2": {
+      "y": 0.45627376425856,
+      "x": 0.0074565037282519,
+      "enabled": false
+    },
+    "(Super SD) Pvp": {
+      "y": 0.019011406844106,
+      "x": 0.063794531897266,
+      "enabled": false
+    },
+    "(Paralyse) Pvp": {
+      "y": 0.19284802043423,
+      "x": 0.046125461254613,
+      "enabled": false
+    },
+    "(SuperSD) Pvp": {
+      "y": 0.23329283110571,
+      "x": 0.064952638700947,
+      "enabled": false
+    },
+    "sd1": {
+      "y": 0.0242656449553,
+      "x": 0.11531365313653,
+      "enabled": false
+    },
+    "Usa": {
+      "y": 0.013941698352345,
+      "x": 0.11516155758078,
+      "enabled": false
+    },
+    "reUseToggle": {
+      "y": 0.32953105196451,
+      "x": 0.072908036454018,
+      "enabled": false
+    },
+    "UMR": {
+      "y": 0.077313054499366,
+      "x": 0.083678541839271,
+      "enabled": false
+    },
+    "(Paralyze) Pvp": {
+      "y": 0.43985419198056,
+      "x": 0.0074424898511502,
+      "enabled": false
+    },
+    "Combo Leader": {
+      "y": 0.26615969581749,
+      "x": 0.010770505385253,
+      "enabled": false
+    },
+    "PushMax": {
+      "y": 0.42528735632184,
+      "x": 0.010147601476015,
+      "enabled": false
+    },
+    "antipushIcon": {
+      "y": 0.019441069258809,
+      "x": 0.012855209742896,
+      "enabled": false
+    },
+    "(Sd) Pvp": {
+      "y": 0.19284802043423,
+      "x": 0.010147601476015,
+      "enabled": true
+    },
+    "toggle": {
+      "y": 0.39290240811153,
+      "x": 0.0099420049710025,
+      "enabled": false
+    },
+    "holdIcon": {
+      "y": 0.05,
+      "x": 0.01,
+      "enabled": false
+    },
+    "(Suoer SD) Pvp": {
+      "y": 0.23815309842041,
+      "x": 0.077131258457375,
+      "enabled": false
+    },
+    "AtkB": {
+      "y": 0.31227217496962,
+      "x": 0.078484438430311,
+      "enabled": false
+    },
+    "(SSD) Pvp": {
+      "y": 0.23450789793439,
+      "x": 0.07510148849797,
+      "enabled": false
+    },
+    "follow": {
+      "y": 0.10472541507024,
+      "x": 0.012915129151292,
+      "enabled": true
+    },
+    "sd3": {
+      "y": 0.12674271229404,
+      "x": 0.067108533554267,
+      "enabled": false
+    }
+  },
+  "healing1": {
+    "max": 95,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "Exura SAN"
+  },
+  "energyRing": {
+    "itemIdEquipped": 3088,
+    "manaPercentRemove": 10,
+    "hpPercentRemove": 95,
+    "screenMonsters": 0,
+    "screenPlayers": 0,
+    "enabled": true,
+    "hpPercent": 64,
+    "itemId": 3051
+  },
+  "isUsingPotion": false,
+  "pushmax": {
+    "pushDelay": 1001,
+    "enabled": false,
+    "pushCloseKey": "R",
+    "pushCloseRuneId": 3188
+  },
+  "uhPercent": {
+    "max": 70,
+    "title": "UH HP%",
+    "on": false,
+    "min": 0,
+    "text": ""
+  },
+  "posCheckRetries": 0,
+  "push_dist": {
+    "pushDistanceRuneId": 3188,
+    "enabled": true,
+    "macroDelay": 200
+  },
+  "healing3": {
+    "max": 90,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "exura vita"
+  },
+  "hpitem1": {
+    "max": 99,
+    "title": "HP%",
+    "subType": 0,
+    "item": 23374,
+    "min": 0,
+    "on": false
+  },
+  "ComboUni": {
+    "SDEffectID": 32,
+    "LeaderSpell": "Exevo Gran Mas Frigo",
+    "Spell": "Exori Gran Con",
+    "UE": "Exevo Mas San",
+    "SDId": 3155,
+    "LeaderName": "name"
+  },
+  "foodItems": [
+    {
+      "id": 3582,
+      "count": 1
+    },
+    {
+      "id": 3577,
+      "count": 1
+    },
+    {
+      "id": 3725,
+      "count": 73
+    }
+  ],
+  "isUsing": false,
+  "serverMembers": "null",
+  "healing2": {
+    "max": 30,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "exura max vita"
+  },
+  "hasteSpell": "Utani gran hur",
+  "supplies": {
+    "imbues": false,
+    "item6": 0,
+    "ammoBp": 0,
+    "item2Min": 0,
+    "runeBp": 0,
+    "item3Min": 0,
+    "item1Min": "00",
+    "item7Max": 0,
+    "item6Max": 0,
+    "item2": 0,
+    "sortSupplies": true,
+    "item6Min": 0,
+    "potionBp": 0,
+    "SoftBoots": false,
+    "item5Max": 0,
+    "item1": 0,
+    "item5Min": 0,
+    "item4Max": 0,
+    "item4Min": 0,
+    "capValue": "0",
+    "item3Max": 0,
+    "item2Max": 0,
+    "staminaSwitch": false,
+    "item5": 0,
+    "staminaValue": 900,
+    "capSwitch": false,
+    "item1Max": "100",
+    "item7": 0,
+    "item3": 0,
+    "item4": 0
+  },
+  "manaitem2": {
+    "max": 90,
+    "title": "MP%",
+    "subType": 0,
+    "item": 23373,
+    "min": 0,
+    "on": true
+  },
+  "containersReset": false,
+  "PalpaNav": {
+    "comboRune": 3155,
+    "ButtonStates": {
+      "LeaderTarget": true,
+      "Mount": true,
+      "HuntRevide": false,
+      "AllowHoldTarget": true,
+      "AllowTargetBot": true,
+      "Turn": true,
+      "DisableHkWhenTyping": true,
+      "SendLoot": false,
+      "MoveAll": false,
+      "PotFriend": false,
+      "AllowRevide": false,
+      "AllowFollow": true,
+      "AllowAutoParty": true,
+      "AntiPush": false,
+      "AllowUses": true,
+      "HybridFollow": true
+    },
+    "EKComboRuneSpell": "Spell",
+    "UtevoRes": "Fire Elemental",
+    "productKey": "Key",
+    "SummonFamiliar": "utevo gran res sac",
+    "comboUE": "Spell",
+    "Hotkeys": {
+      "Walk": "F3",
+      "AllowUses": "NONE",
+      "MoveAll": "NONE",
+      "UtevoRes": "NONE",
+      "MakeLine": "NONE",
+      "AllowFollow": "NONE",
+      "AllowTarget": "NONE",
+      "SummonFamiliar": "NONE",
+      "RuneCombo": "F1",
+      "LeaderTarget": "NONE",
+      "OffilineTraining": "NONE",
+      "MWCombo": "NONE",
+      "AllowHoldTarget": "NONE",
+      "ClearTarget": "Escape",
+      "AllowRevide": "NONE",
+      "UECombo": "F2",
+      "AntiPush": "NONE"
+    },
+    "playerToFollow": "Suomaf Desselb",
+    "delayAfterUses": 1000,
+    "splittMoneyAmount": 100000,
+    "PotFriendManaPercent": "60",
+    "navLeader": "Suomaf Desselb",
+    "comboUEMsg": "Bye Bye :)",
+    "RopeItem": 3003,
+    "comboMWRuneID": 3180,
+    "AntiPushItems": "3031,3035,3492",
+    "height": 360,
+    "PotFriendItem": 23374
+  },
+  "currentStack": 0,
+  "manaitem1": {
+    "max": 50,
+    "title": "MP%",
+    "subType": 0,
+    "item": 3582,
+    "min": 0,
+    "on": false
+  },
+  "mwPoses": [
+
+  ],
+  "comboSDLeader": "Gui Datrabai",
+  "BotServerChannel": "4661341634040",
+  "comboUESpell": "exevo gran mas vis",
+  "extras": {
+    "rope": 9596,
+    "bless": true,
+    "gotoMaxDistance": 30,
+    "holdMwall": true,
+    "checkPlayer": true,
+    "looting": 40,
+    "suppliesControl": false,
+    "killUnder": 1,
+    "joinBot": false,
+    "lootLast": false,
+    "holdMwHot": "F5",
+    "shovel": 9596,
+    "reachable": false,
+    "autoOpenDoors": true,
+    "stake": false,
+    "scythe": 9596,
+    "title": true,
+    "mWall": "3180",
+    "reUse": false,
+    "height": 360,
+    "pathfinding": false,
+    "machete": 9596,
+    "separatePm": false,
+    "useAll": "space",
+    "lootDelay": 210,
+    "holdWgHot": "F6",
+    "oberon": false,
+    "antiKick": true,
+    "talkDelay": 900,
+    "timers": true,
+    "highlightTarget": true,
+    "huntRoutes": 60,
+    "nextBackpack": false
+  },
+  "manaTrain": {
+    "max": 100,
+    "title": "MP%",
+    "on": false,
+    "min": 91,
+    "text": "exura san"
+  },
+  "lowCapDrop": [
+
+  ],
+  "openMin": false,
+  "sellAllCap": 0,
+  "lootItemsCount": 0,
+  "useItems": [
+    {
+      "count": 100,
+      "id": 36738
+    },
+    {
+      "count": 100,
+      "id": 36736
+    },
+    {
+      "count": 100,
+      "id": 36737
+    },
+    {
+      "count": 1,
+      "id": 36741
+    }
+  ],
+  "hpitem2": {
+    "max": 50,
+    "title": "HP%",
+    "subType": 0,
+    "item": 3160,
+    "min": 0,
+    "on": false
+  },
+  "AntiPushItems": "3031,3035",
+  "newHealer": {
+    "settings": [
+      {
+        "type": "HealItem",
+        "value": 268,
+        "text": "Mana Item "
+      },
+      {
+        "type": "HealScroll",
+        "value": 1,
+        "text": "Item Range: "
+      },
+      {
+        "type": "HealItem",
+        "value": 3160,
+        "text": "Health Item "
+      },
+      {
+        "type": "HealScroll",
+        "value": 2,
+        "text": "Mas Res Players: "
+      },
+      {
+        "type": "HealScroll",
+        "value": 60,
+        "text": "Heal Friend at: "
+      },
+      {
+        "type": "HealScroll",
+        "value": 80,
+        "text": "Use Gran Sio at: "
+      },
+      {
+        "type": "HealScroll",
+        "value": 60,
+        "text": "Min Player HP%: "
+      },
+      {
+        "type": "HealScroll",
+        "value": 50,
+        "text": "Min Player MP%: "
+      }
+    ],
+    "groups": [
+
+    ],
+    "customPlayers": [
+
+    ],
+    "conditions": {
+      "party": true,
+      "knights": true,
+      "friends": true,
+      "botserver": false,
+      "paladins": true,
+      "druids": true,
+      "sorcerers": true,
+      "guild": true
+    },
+    "enabled": false,
+    "priorities": [
+      {
+        "normal": true,
+        "enabled": true,
+        "name": "Exura Sio"
+      },
+      {
+        "custom": true,
+        "enabled": false,
+        "name": "Custom Spell"
+      },
+      {
+        "strong": true,
+        "enabled": false,
+        "name": "Exura Gran Sio"
+      },
+      {
+        "enabled": false,
+        "name": "Exura Gran Mas Res",
+        "area": true
+      },
+      {
+        "health": true,
+        "enabled": false,
+        "name": "Health Item"
+      },
+      {
+        "enabled": false,
+        "name": "Mana Item",
+        "mana": true
+      }
+    ],
+    "vocations": [
+
+    ]
+  },
+  "wgPoses": [
+
+  ],
+  "_configs": {
+    "targetbot_configs": {
+      "selected": "Tudo",
+      "enabled": true
+    },
+    "cavebot_configs": {
+      "selected": "Infernal_Demon_alt",
+      "enabled": false
+    }
+  },
+  "stopSearch": false,
+  "comboUELeader": "Guzin Datrabai",
+  "BOTserver": {
+    "manaInfo": true,
+    "mwallInfo": false,
+    "paramaxHotkey": "F11",
+    "playerPos": true,
+    "comboSDHotkey": "F12",
+    "paramax": false,
+    "runeCombo": false
+  },
+  "ssaAutoLoot": {
+    "mode": "idle",
+    "active": false
+  },
+  "antiParalyze": "exura vita",
+  "trashItems": [
+
+  ],
+  "autoEquip": [
+    {
+      "item1": 9392,
+      "title": "Auto Equip",
+      "item2": 9392,
+      "on": true,
+      "slot": 9
+    },
+    {
+      "item1": 31676,
+      "title": "Auto Equip",
+      "item2": 31676,
+      "on": true,
+      "slot": 2
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    }
+  ],
+  "alarms": {
+    "playerDetected": true,
+    "healthValue": 40,
+    "healthBelow": false,
+    "playerAttack": true,
+    "manaBelow": false,
+    "privateMessage": true,
+    "manaValue": 50,
+    "enabled": false,
+    "playerDetectedLogout": false,
+    "creatureDetected": false
+  },
+  "fName": "Magic Shield",
+  "manaShield": "utamo vita",
+  "ComboAttack": {
+    "LeaderName3": "Cocacolaa Lyze",
+    "LeaderName2": "Keidann Loko",
+    "LeaderName": "Bozosz Fullstress"
+  },
+  "OpenPrivateTabs": true,
+  "playerList": {
+    "enemyList": [
+
+    ],
+    "outfits": false,
+    "groupMembers": true,
+    "marks": true,
+    "highlight": false,
+    "blackList": [
+
+    ],
+    "friendList": [
+
+    ]
+  }
+}

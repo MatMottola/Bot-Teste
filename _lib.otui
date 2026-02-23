@@ -1,0 +1,11 @@
+ExivaWindow < Window
+  background-color: alpha
+  size: 100 100
+  image-color: alpha
+  
+  Label
+    id: label
+    color: white
+    background-color: #00000088
+    margin-right: 10
+    text-horizontal-auto-resize: true

@@ -1,0 +1,142 @@
+EnergyRingWindow < MainWindow
+  !text: tr('Auto RIng')
+  size: 200 400
+  @onEscape: self:hide()
+
+
+  BotLabel
+    id: hpPercentText
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+
+  HorizontalScrollBar
+    id: hpPercent
+    anchors.left: hpPercentText.left
+    anchors.right: hpPercentText.right
+    anchors.top: hpPercentText.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 100
+    step: 1
+
+  BotLabel
+    id: hpPercentRemoveText
+    anchors.top: hpPercent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+
+  HorizontalScrollBar
+    id: hpPercentRemove
+    anchors.left: hpPercentRemoveText.left
+    anchors.right: hpPercentRemoveText.right
+    anchors.top: hpPercentRemoveText.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 100
+    step: 1
+
+  BotLabel
+    id: manaPercentRemoveText
+    anchors.top: hpPercentRemove.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+
+  HorizontalScrollBar
+    id: manaPercentRemove
+    anchors.left: manaPercentRemoveText.left
+    anchors.right: manaPercentRemoveText.right
+    anchors.top: manaPercentRemoveText.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 10
+    step: 1
+
+  BotLabel
+    id: screenMonstersText
+    anchors.top: manaPercentRemove.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+
+  HorizontalScrollBar
+    id: screenMonsters
+    anchors.left: screenMonstersText.left
+    anchors.right: screenMonstersText.right
+    anchors.top: screenMonstersText.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 10
+    step: 1
+
+  BotLabel
+    id: screenPlayersText
+    anchors.top: screenMonsters.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+
+  HorizontalScrollBar
+    id: screenPlayers
+    anchors.left: screenPlayersText.left
+    anchors.right: screenPlayersText.right
+    anchors.top: screenPlayersText.bottom
+    margin-top: 5
+    minimum: 0
+    maximum: 10
+    step: 1
+
+  Label
+    id: label1
+    anchors.top: screenPlayers.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    text: Ring
+    margin-top: 5        
+
+  BotItem
+    id: itemId
+    anchors.horizontalCenter: label1.horizontalCenter
+    anchors.top: label1.bottom
+    margin-top: 5
+
+  Label
+    id: label2
+    anchors.top: itemId.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 10
+    text-align: center
+    text: Equipped Ring
+
+  BotItem
+    id: itemIdEquipped
+    anchors.horizontalCenter: label2.horizontalCenter
+    anchors.top: label2.bottom
+    margin-top: 5
+
+  HorizontalSeparator
+    id: separator
+    anchors.right: parent.right
+    anchors.left: parent.left
+    anchors.bottom: closeButton.top
+    margin-bottom: 8    
+
+  Button
+    id: closeButton
+    !text: tr('Close')
+    font: cipsoftFont
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    size: 45 21
+    margin-top: 15
+    margin-right: 5    
