@@ -145,4 +145,5 @@ addIcon("toggle2", {item={id = 3180, count = 1}, text=" MW on Target"}, function
   toggle2.setOn(isOn)
 end)
 
+addSeparator()
 
