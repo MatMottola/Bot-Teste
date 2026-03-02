@@ -147,3 +147,38 @@ end)
 
 addSeparator()
 
+local SD_ID = 44761
+local DELAY = 100
+
+
+-- SD
+local function findSD()
+    for _, container in pairs(g_game.getContainers()) do
+        for _, item in pairs(container:getItems()) do
+            if item:getId() == SD_ID then
+                return item
+            end
+        end
+    end
+    return nil
+end
+
+
+local sdMacro = macro(DELAY, function()
+    local target = g_game.getAttackingCreature()
+    if not target then return end
+    
+    local sd = findSD()
+    if not sd then return end
+    
+    g_game.useWith(sd, target)
+end)
+
+sdMacro.setOff()
+addIcon("SD MAX", {item={id = 44761, count = 1}, text="SD Max"}, function(icon, isOn)
+    if isOn then
+        sdMacro.setOn()
+    else
+        sdMacro.setOff()
+    end
+end)
