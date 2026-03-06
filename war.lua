@@ -182,3 +182,25 @@ addIcon("SD MAX", {item={id = 44761, count = 1}, text="SD Max"}, function(icon, 
         sdMacro.setOff()
     end
 end)
+
+lblInfo = UI.Label("Follow Mouse")
+
+local followIcon
+
+local toggle_Bugmap = macro(50, "Follow Mouse","f3", function(m)
+    local tile = getTileUnderCursor()
+    if not tile then return end
+
+    if tile:getTopThing() == player then
+        m.setOff()
+        if followIcon then
+            followIcon:setOn(false)
+        end
+        return
+    end
+
+    g_game.use(tile:getTopUseThing())
+end)
+
+
+addSeparator()
