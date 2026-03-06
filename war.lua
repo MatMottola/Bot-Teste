@@ -27,6 +27,8 @@ local mwId = 3180
 local wgId = 3156
 local wallIds = {2128, 2129, 2130}
 
+lblInfo = UI.Label("Force Walls")
+
 macro(50, "Force Hold Wg", function()
   for _, pos in ipairs(storage.wgPoses) do
     local tile = g_map.getTile(pos)
@@ -111,6 +113,7 @@ end)
 addSeparator()
 
 --MW
+lblInfo = UI.Label("MW Scripts")
 
 local toggle = macro(10, "mwall step","f2",function() end)
 
