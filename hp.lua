@@ -42,7 +42,6 @@ for _, healingInfo in ipairs({storage.healing1, storage.healing2, storage.healin
 end
 
 UI.Separator()
-
 addLabel("", "Green Emblem Sio"):setColor("green")
 
 local spell = "exura sio"
