@@ -1,5 +1,6 @@
 setDefaultTab("Main")
-
+addSeparator()
+addSeparator()
 -- securing storage namespace
 local panelName = "extras"
 if not storage[panelName] then
@@ -97,7 +98,7 @@ local addScrollBar = function(id, title, min, max, defaultValue, dest, tooltip)
   widget.scroll.onValueChange(widget.scroll, widget.scroll:getValue())
 end
 
-UI.Button("vBot Settings and Scripts", function()
+UI.Button("Settings and Scripts", function()
   extrasWindow:show()
   extrasWindow:raise()
   extrasWindow:focus()

@@ -1,4 +1,4 @@
--- -- script
+lblinfo = UI.Label("General Tools")
 local walkDir
  onKeyDown(function(keys)
    if modules.game_walking.wsadWalking then
