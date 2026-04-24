@@ -3,9 +3,9 @@ storage.json
 */*.cfg
 
 
-cavebot/*
-cavebot_configs/*
-storage/*
-targetbot/*
-targetbot_configs/*
-war/*
+cavebot/
+cavebot_configs/
+storage/
+targetbot/
+targetbot_configs/
+war/
